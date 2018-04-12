@@ -29,7 +29,7 @@ const uint64_t DIFFICULTY_TARGET                             = 240; // seconds
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 111; // addresses start with "K"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 154; // addresses start with "Sm"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = DIFFICULTY_TARGET * 7;
 
@@ -130,7 +130,7 @@ const uint32_t P2P_IDLE_CONNECTION_KILL_INTERVAL             = (5 * 60);      //
 
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
-const char* const SEED_NODES[] = { 
+const char* const SEED_NODES[] = {
   "seed1.karbowanec.com:32347",
   "seed2.karbowanec.com:32347",
   "seed.karbo.cloud:32347",
@@ -146,7 +146,7 @@ struct CheckpointData {
   const char* blockId;
 };
 
-const std::initializer_list<CheckpointData> CHECKPOINTS = { 
+const std::initializer_list<CheckpointData> CHECKPOINTS = {
   {3436,	"fa0348c379f63af68304f9f256ea99cc8560eda5a25740dc7ff94631fc7fcf5d" },
   {16970,	"456e43e923a02516559d89f567c3fa2068051a9fdac562a937eeaaaf3e9aab46" },
   {30000,	"4d9762f83ebebb462f1787862aa001e954dadafd203d2fdb973e4b2e52891cf4" },
@@ -171,6 +171,3 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
 } // CryptoNote
 
 #define ALLOW_DEBUG_COMMANDS
-
-
-
