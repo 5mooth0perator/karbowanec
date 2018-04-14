@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2016, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2016, The Forknote developers
-// Copyright (c) 2016, The Karbowanec developers
+// Copyright (c) 2016, The Kārbowanec developers
 // This file is part of Bytecoin.
 //
 // Bytecoin is free software: you can redistribute it and/or modify
@@ -170,7 +170,7 @@ int main(int argc, char* argv[])
 
     if (!r)
       return 1;
-  
+
     auto modulePath = Common::NativePathToGeneric(argv[0]);
     auto cfgLogFile = Common::NativePathToGeneric(command_line::get_arg(vm, arg_log_file));
 

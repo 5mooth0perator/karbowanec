@@ -500,7 +500,7 @@ namespace CryptoNote {
 		difficulty_type totalWork = cumulativeDifficulties.back() - cumulativeDifficulties.front();
 		assert(totalWork > 0);
 
-		// uint64_t nextDiffZ = totalWork * m_difficultyTarget / timeSpan; 
+		// uint64_t nextDiffZ = totalWork * m_difficultyTarget / timeSpan;
 
 		uint64_t low, high;
 		low = mul128(totalWork, m_difficultyTarget, &high);
@@ -525,8 +525,8 @@ namespace CryptoNote {
 		// LWMA difficulty algorithm
 		// Copyright (c) 2017-2018 Zawy
 		// MIT license http://www.opensource.org/licenses/mit-license.php.
-		// This is an improved version of Tom Harding's (Deger8) "WT-144"  
-		// Karbowanec, Masari, Bitcoin Gold, and Bitcoin Cash have contributed.
+		// This is an improved version of Tom Harding's (Deger8) "WT-144"
+		// Kārbowanec, Masari, Bitcoin Gold, and Bitcoin Cash have contributed.
 		// See https://github.com/zawy12/difficulty-algorithms/issues/1 for other algos.
 		// Do not use "if solvetime < 0 then solvetime = 1" which allows a catastrophic exploit.
 		// T= target_solvetime;
@@ -570,7 +570,7 @@ namespace CryptoNote {
 		harmonic_mean_D = N / sum_inverse_D * adjust;
 		nextDifficulty = harmonic_mean_D * T / LWMA;
 		next_difficulty = static_cast<uint64_t>(nextDifficulty);
-		
+
 		// minimum limit
 		if (next_difficulty < 100000) {
 			next_difficulty = 100000;

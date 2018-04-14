@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2016, The CryptoNote developers, The Bytecoin developers
-// Copyright (c) 2016, The Karbowanec developers
+// Copyright (c) 2016, The Kārbowanec developers
 //
 // This file is part of Bytecoin.
 //
@@ -696,7 +696,7 @@ difficulty_type Blockchain::getDifficultyForNextBlock() {
   size_t offset;
   if (BlockMajorVersion == BLOCK_MAJOR_VERSION_2) {
 	 offset = m_blocks.size() - std::min(m_blocks.size(), static_cast<uint64_t>(m_currency.difficultyBlocksCount2()));
-  } 
+  }
   else if (BlockMajorVersion >= BLOCK_MAJOR_VERSION_3) {
      offset = m_blocks.size() - std::min(m_blocks.size(), static_cast<uint64_t>(m_currency.difficultyBlocksCount3()));
   }
