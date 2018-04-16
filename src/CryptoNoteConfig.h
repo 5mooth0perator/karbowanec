@@ -36,8 +36,8 @@ const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = DIFFICULTY_TARGET
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(1000000000);    //was 10000000000000000000
-const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(100);           //was 1000000000000 (10000000000000000000/10000000=1.000.000.000.000) so (1000000000/10000000=100)
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(100000000000);
+const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(10000);
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
 const unsigned EMISSION_SPEED_FACTOR                         = 18;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
@@ -48,9 +48,9 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 1000000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 100000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 2; //was k-r-b 12
-const uint64_t MINIMUM_FEE                                   = UINT64_C(100000000000);
-const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(100000000);
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 4; //was k-r-b 12
+const uint64_t MINIMUM_FEE                                   = UINT64_C(1);
+const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(0);
 const uint64_t MAX_TX_MIXIN_SIZE                             = 20;
 
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
