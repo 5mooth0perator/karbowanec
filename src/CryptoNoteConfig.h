@@ -94,7 +94,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "Robinhood";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001e61d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d0d8a28677344e9206724390d7ba8bfdad6c0a2153d6d99b7dfeee351ec8716c";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 // robinhood/12decimal was 010a01ff0001fac484c69cd608029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016b663341028652c3a804aa42c3a96566e7405986b6ca83ed35f76fb14e350271
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
